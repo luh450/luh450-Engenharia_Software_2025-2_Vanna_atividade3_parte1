@@ -6,6 +6,16 @@
 **Repositório analisado:** https://github.com/vanna-ai/vanna  
 
 
+## Integrantes
+Josias Ribeiro de Freitas Júnior - 202200025644
+
+Natalia Silva Santos - 202400018206
+
+Luzia dos Santos Souza Neta - 201700017537
+
+Anthony Amoz Santos Aragao - 202100011207
+
+
 ---
 
 ## 1. Objetivo da Etapa
