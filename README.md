@@ -27,7 +27,7 @@ Realizar uma investigação no repositório original com o objetivo de compreend
 
 ### 2.1 Ferramentas Identificadas
 
-O projeto **utiliza GitHub Actions como ferramenta de CI/CD**.
+O projeto utiliza GitHub Actions como ferramenta de CI/CD.
 
 A evidência pode ser confirmada pela aba **Actions** do repositório, onde estão listados diversos workflows ativos, incluindo:
 
@@ -46,7 +46,7 @@ Esses workflows indicam a presença de automação para:
 ### 3.1 Arquivos de Configuração
 
 O repositório contém a pasta:
-.github/workflows/
+`.github/workflows/`
 
 
 Esse diretório é o padrão do GitHub Actions para armazenar arquivos de configuração no formato `.yml`, que definem:
@@ -81,7 +81,6 @@ A análise do histórico de PRs indica:
 4. Workflows executam testes e verificações
 5. Após aprovação e sucesso dos checks, o código é integrado à branch principal
 
----
 
 ### 4.2 Integração Contínua (CI)
 
