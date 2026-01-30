@@ -88,6 +88,30 @@ A análise do histórico de PRs indica:
 - Automatiza testes e validações
 - Reduz riscos de integração de código defeituoso
 
+#### 4.2.1 Workflow: `Basic Integration Tests`
+
+Este workflow é executado automaticamente sempre que há alterações na main.
+
+> Evidências Diretas:
+
+Na lista de execução de workflows [link](https://github.com/vanna-ai/vanna/actions?utm_source=chatgpt.com)
+
+
+![alt text](image.png)
+
+Cada execução listada mostra:
+
+Que o workflow Basic Integration Tests é disparado automaticamente quando um commit é feito na main. Que testes são executados (há duração do run e indicação de jobs). Esse padrão confirma que há CI ativa no repositório.
+
+No histórico desses runs, também há referências a commits que comentam mudanças no teste devido a problemas externos:
+
+![alt text](image-1.png)
+
+ou seja, essa uma evidência técnica de instabilidade nos testes, e nos dá um insight sobre um gargalo: testes de integração podem falhar por dependências externas (serviços de IA ou bases de dados).
+
+
+
+
 
 
 ### 4.3 Entrega Contínua (CD)
