@@ -110,10 +110,6 @@ No histórico desses runs, também há referências a commits que comentam mudan
 ou seja, essa uma evidência técnica de instabilidade nos testes, e nos dá um insight sobre um gargalo: testes de integração podem falhar por dependências externas (serviços de IA ou bases de dados).
 
 
-
-
-
-
 ### 4.3 Entrega Contínua (CD)
 
 - Não há evidência clara de pipelines completos de deploy automatizado
@@ -122,10 +118,37 @@ ou seja, essa uma evidência técnica de instabilidade nos testes, e nos dá um 
   - Revisão de código
   - Publicação de pacotes
 
-Isso sugere que o processo de entrega final (deploy em ambientes produtivos ou similares) pode:
+Embora a publicação automática no PyPI caracterize uma forma de entrega
+contínua de artefatos, não foram encontradas evidências de deploy
+automatizado de uma aplicação ou serviço em ambiente produtivo.
+
+Dessa forma, o processo de entrega final pode:
+
 - Não estar automatizado
 - Estar parcialmente automatizado
-- Ou ocorrer fora do escopo público do repositório
+- Ou ocorrer fora do escopo público do repositório.
+
+
+Evidência 1 — Workflow de publicação automatizada.
+
+.github/workflows/publish.yml 
+> obs.:  visível na aba Actions
+
+Nome do workflow:  Upload Python Package
+
+Evidência 2 —  (release)
+
+O workflow não roda em push.
+Ele roda somente quando uma release é publicada.
+
+ Evidência visível nas execuções:
+
+> obs: v2.0.0, v2.0.1
+ - ![alt text](image-2.png)
+
+- fluxo  evidência direta de CD baseada em release:
+
+ Lista de runs na aba Actions > Cada run mostra explicitamente: `“Release vX.Y.Z published”`
 
 
 
